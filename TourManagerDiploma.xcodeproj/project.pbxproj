@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE0DB3A72D6244F300193D1F /* DivKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE0DB3A62D6244F300193D1F /* DivKit */; };
+		EE0DB3A92D6244F300193D1F /* DivKitExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE0DB3A82D6244F300193D1F /* DivKitExtensions */; };
+		EE0DB3AB2D6244F300193D1F /* DivKitMarkdownExtension in Frameworks */ = {isa = PBXBuildFile; productRef = EE0DB3AA2D6244F300193D1F /* DivKitMarkdownExtension */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EE0DB38D2D62433200193D1F /* TourManagerDiploma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourManagerDiploma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0DB3AB2D6244F300193D1F /* DivKitMarkdownExtension in Frameworks */,
+				EE0DB3A72D6244F300193D1F /* DivKit in Frameworks */,
+				EE0DB3A92D6244F300193D1F /* DivKitExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = TourManagerDiploma;
 			packageProductDependencies = (
+				EE0DB3A62D6244F300193D1F /* DivKit */,
+				EE0DB3A82D6244F300193D1F /* DivKitExtensions */,
+				EE0DB3AA2D6244F300193D1F /* DivKitMarkdownExtension */,
 			);
 			productName = TourManagerDiploma;
 			productReference = EE0DB38D2D62433200193D1F /* TourManagerDiploma.app */;
@@ -107,6 +119,9 @@
 			);
 			mainGroup = EE0DB3842D62433200193D1F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EE0DB3A52D6244F300193D1F /* XCRemoteSwiftPackageReference "divkit-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE0DB38E2D62433200193D1F /* Products */;
 			projectDirPath = "";
@@ -150,9 +165,7 @@
 				INFOPLIST_FILE = TourManagerDiploma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,9 +173,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shredding.TourManagerDiploma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -178,9 +195,7 @@
 				INFOPLIST_FILE = TourManagerDiploma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,9 +203,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shredding.TourManagerDiploma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -335,6 +354,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE0DB3A52D6244F300193D1F /* XCRemoteSwiftPackageReference "divkit-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/divkit/divkit-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 31.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE0DB3A62D6244F300193D1F /* DivKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE0DB3A52D6244F300193D1F /* XCRemoteSwiftPackageReference "divkit-ios" */;
+			productName = DivKit;
+		};
+		EE0DB3A82D6244F300193D1F /* DivKitExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE0DB3A52D6244F300193D1F /* XCRemoteSwiftPackageReference "divkit-ios" */;
+			productName = DivKitExtensions;
+		};
+		EE0DB3AA2D6244F300193D1F /* DivKitMarkdownExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE0DB3A52D6244F300193D1F /* XCRemoteSwiftPackageReference "divkit-ios" */;
+			productName = DivKitMarkdownExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE0DB3852D62433200193D1F /* Project object */;
 }
